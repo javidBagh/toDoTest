@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cypress run",
     "cypress:run": "cypress run",
     "postcypress:run": "npm run generate:report",
     "generate:report": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mocha/report.json && marge cypress/reports/mocha/report.json -o cypress/reports/mocha -f report"
